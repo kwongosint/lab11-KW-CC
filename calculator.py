@@ -4,6 +4,8 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
+
 def add(a, b): 
     return a + b
 
@@ -19,7 +21,7 @@ def div(a, b):
     return a/b
 
 def log(a, base):
-    if a <= 0:
+    if a <= 0 or base <= 0 or base == 1:
         raise ValueError("Logarithm undefined for non-positive numbers")
     return math.log(a, base)
 
