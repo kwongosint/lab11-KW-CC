@@ -1,3 +1,7 @@
+# https://github.com/kwongosint/lab11-KW-CC
+# Partner 1: Connor Corr
+# Partner 2: Katie Wong
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -27,4 +31,12 @@ def log(a, base):
 
 def exp(a, b):
     return a ** b
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Square root undefined for negative numbers")
+    return math.sqrt(a)
+
+def hypotenuse(a,b):
+    return math.hypot(a,b)
 
